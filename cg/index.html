@@ -1,0 +1,49 @@
+<div>
+<label for="1">1st sem:</label>
+<input type="number" step="0.01" id="1" name="1" min="2" max="4"> 
+</div>
+<div>
+<label for="2">2nd sem:</label>
+<input type="number" step="0.01" id="2" name="2" min="2" max="4"> 
+</div>
+<div>
+<label for="3">3rd sem:</label>
+<input type="number" step="0.01" id="3" name="3" min="2" max="4"> 
+</div>
+<div>
+<label for="4">4th sem:</label>
+<input type="number" step="0.01" id="4" name="4" min="2" max="4"> 
+</div>
+<div>
+<label for="5">5th sem:</label>
+<input type="number" step="0.01" id="5" name="5" min="2" max="4"> 
+</div>
+<button onclick="calculate()">CG upto 5</button>
+
+
+<div>
+<label for="res">GG:</label>
+<input type="number" step="0.01" id="res" name="res" min="2" max="4" readonly="true"> 
+</div>
+
+<script>
+function calculate() {
+	18,21,18,19,23
+	let first=document.getElementById("1").value*18;
+	let second=document.getElementById("2").value*21;
+	let third=document.getElementById("3").value*18;
+	let fourth=document.getElementById("4").value*19;
+	let fifth=document.getElementById("5").value*23;
+	let res=(first+second+third+fourth+fifth)/(18+21+18+19+23);
+	document.getElementById("res").value=res;
+}
+</script>
+<script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-136427840-3', 'auto');
+      ga('send', {
+           hitType: 'pageview',
+           page: location.pathname
+      });
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
